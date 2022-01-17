@@ -60,11 +60,13 @@ const enum ReadyState {
 	 * and this is the initial state of every
 	 * window.
 	 */
-	NONE,
+	NONE = 1,
 
 	/**
 	 * This window is navigating, either for the
-	 * first time or subsequent times.
+	 * first time or subsequent times. The window
+	 * is not ready yet to communicate with the
+	 * web contents.
 	 */
 	NAVIGATING,
 
